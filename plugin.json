@@ -1,0 +1,9 @@
+{
+  "name": "select",
+  "version": "0.0.1",
+  "main": "reader.js",
+  "public": {
+    "reader_template": "./select.jade",
+    "reader_style": "./select.styl"
+  }
+}

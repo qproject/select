@@ -1,0 +1,10 @@
+span(decorator="block:question")
+    | {{ question }}
+.container-fluid(decorator="block:content")
+    .row
+        .col-sm-4.col-sm-offset-4
+            select(value="{{ value }}").form-control
+                | {{ #items: item }}
+                option(value="{{ id }}" selected="{{ selected }}" disabled="{{ disabled }}")
+                    | {{ title }}
+                | {{ /items }}
